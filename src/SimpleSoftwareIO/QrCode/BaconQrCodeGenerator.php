@@ -55,7 +55,7 @@ class BaconQrCodeGenerator implements QrCodeInterface
      * @param Writer|null            $writer
      * @param RendererInterface|null $format
      */
-    public function __construct(Writer $writer = null, RendererInterface $format = null)
+    public function __construct(?Writer $writer = null, ?RendererInterface $format = null)
     {
         $format = $format ?: new Svg();
         $this->writer = $writer ?: new Writer($format);
