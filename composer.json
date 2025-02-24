@@ -19,7 +19,7 @@
     "require": {
         "php": ">=8",
         "ext-gd": "*",
-        "bacon/bacon-qr-code": "^1",
+        "bacon/bacon-qr-code": "dev-develop as 1.0.4",
         "illuminate/support": ">=5.0.0"
     },
     "require-dev": {
@@ -40,5 +40,11 @@
                 "QrCode": "SimpleSoftwareIO\\QrCode\\Facades\\QrCode"
             }
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/tectiv3/BaconQrCode"
+        }
+    ]
 }
